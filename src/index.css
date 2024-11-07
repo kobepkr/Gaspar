@@ -1,0 +1,37 @@
+/* src/components/Header.css */
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%; /* Asegura que el body ocupe todo el ancho */
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: #34495e;
+  padding: 15px;
+  color: white;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%; /* Asegura que no haya restricciones en el ancho */
+}
+
+.contact-info {
+  font-size: 14px;
+}
+
+.contact-info span {
+  margin-right: 15px;
+}
+
+.header-content h1 {
+  margin: 0;
+  text-align: left;
+}
