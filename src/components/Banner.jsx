@@ -6,7 +6,11 @@ const Banner = () => {
     <div className="banner">
       <div className="banner-content">
         <img src="./src/assets/logo.png" alt="Escuela Gaspar Cabrales" width="100" />
-        <h1>Escuela Gaspar Cabrales</h1>
+        <div className="text-content">
+          <h3>Escuela</h3>
+          <h1>Gaspar Cabrales</h1>
+          <h3>Valparaíso</h3>
+        </div>
       </div>
     </div>
   );

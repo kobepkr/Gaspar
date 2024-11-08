@@ -1,35 +1,23 @@
 /* src/components/Header.css */
-
-
 .header {
-  background-color: #34495e;
-  padding: -10px;
-  color: white;
-  width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: center; /* Centra el contenido horizontalmente */
-  align-items: center; /* Centra el contenido verticalmente */
-  height: 150px; /* Ajusta la altura según el contenido */
-  margin-top: -110px;
-  padding-top: 120px;
+  background-color: #0077b6; /* Cambia el color del fondo si lo deseas */
+  padding: 1rem;
 }
 
 .header-content {
   display: flex;
-  flex-direction: column; /* Alinea los elementos en columna */
-  text-align: center; /* Centra el texto dentro de cada elemento */
+  justify-content: center; /* Centra todo el contenido de izquierda a derecha */
+  align-items: center; /* Centra el contenido verticalmente */
+  gap: 2rem; /* Espacio entre cada elemento */
 }
 
 .contact-info {
-  font-size: 14px;
-  margin-top: 10px;
+  display: flex;
+  gap: 1rem; /* Espacio entre los items de contacto */
 }
 
 .contact-info span {
-  margin-right: 15px;
-}
-
-.header-content h1 {
-  margin: 0;
+  display: inline-block; /* Asegura que los items no se dividan en líneas nuevas */
+  font-size: 1rem; /* Ajusta el tamaño de la fuente */
+  color: white; /* Ajusta el color del texto */
 }

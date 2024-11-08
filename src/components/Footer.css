@@ -1,0 +1,93 @@
+/* src/components/Footer/Footer.css */
+
+.footer {
+  background-color: #d7dcdf;
+  color: rgb(27, 26, 26);
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.footer-title {
+  text-align: center;
+  margin-bottom: 2rem; /* Espacio entre el título y el contenido */
+}
+
+.footer-title h2 {
+  font-size: 2rem;
+  color: #0a0a0a;
+  margin: 0;
+}
+
+.footer-title p {
+  font-size: 1.1rem;
+  color: #141313;
+  margin-top: 0.5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin-bottom: 2rem;
+  text-align: justify; /* Justifica el texto */
+}
+
+.footer-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.footer-section p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00b4d8;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0077b6;
+}
+
+.map iframe {
+  border: 0;
+  width: 100%;
+  height: 200px;
+  border-radius: 4px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}

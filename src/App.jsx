@@ -1,15 +1,18 @@
 // src/App.jsx
 import React from 'react';
-import Header from './components/Header'; // Importa el Header
 import './App.css';  // Aquí puedes poner los estilos generales de tu aplicación
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
       
       <main>
-        {/* Aquí va el contenido de tu página */}
+      <h2>Bienvenido a la Escuela Gaspar Cabrales</h2>
+      <p>Aquí va el contenido de la página...</p>
       </main>
+
+      <Footer/>
     </div>
   );
 }
