@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -11,39 +11,39 @@ const Navbar = () => {
           <li className="dropdown">
           <button className="dropdown-btn">Proyecto Edcucativo Institucional (PEI)</button>
           <ul className="dropdown-menu">
-            <li><a href="#">Misión</a></li>
-            <li><a href="#">Visión</a></li>
-            <li><a href="#">Sello</a></li>
-            <li><a href="#">Perfiles</a></li>
+            <li><NavLink to="/mision">Misión</NavLink></li>
+            <li><NavLink to="/vision">Visión</NavLink></li>
+            <li><NavLink to="/sello">Sello</NavLink></li>
+            <li><NavLink to="/perfiles">Perfiles</NavLink></li>
           </ul>
         </li>
 
         <li className="dropdown">
           <button className="dropdown-btn">Reglamento Interno</button>
           <ul className="dropdown-menu">
-            <li><a href="#">Manual</a></li>
-            <li><a href="#">Convivencia escolar</a></li>
-            <li><a href="#">Protocolos</a></li>
-            <li><a href="#">Uniforme</a></li>
-            <li><a href="#">Horarios</a></li>
+          <li><NavLink to="/manual">Manual</NavLink></li>
+          <li><NavLink to="/convivencia">Convivencia escolar</NavLink></li>
+          <li><NavLink to="/protocolos">Protocolos</NavLink></li>
+          <li><NavLink to="/uniformes">Uniforme</NavLink></li>
+          <li><NavLink to="/horarios">Horarios</NavLink></li>
           </ul>
         </li>
 
         <li className="dropdown">
           <button className="dropdown-btn">Plan de mejora educativo (PME)</button>
           <ul className="dropdown-menu">
-            <li><a href="#">Objetivos</a></li>
-            <li><a href="#">Acciones</a></li>
+          <li><NavLink to="/objetivos">Objetivos</NavLink></li>
+          <li><NavLink to="/acciones">Acciones</NavLink></li>
           </ul>
         </li>
 
            {/* Dropdown Convivencia Escolar */}
-           <li className="dropdown">
+          <li className="dropdown">
           <button className="dropdown-btn">Comunidad</button>
           <ul className="dropdown-menu">
-            <li><a href="#">Equipo de gestión directivo</a></li>
-            <li><a href="#">Equipo docente</a></li>
-            <li><a href="#sdfdsf">Equipo asistente de la educación</a></li>
+          <li><NavLink to="/asistenteEducacion">Equipo de gestion directivo</NavLink></li>
+            <li><NavLink to="/docente">Equipo docente</NavLink></li>
+            <li><NavLink to="/gestionDirectivo">Equipo asistente de la educacón</NavLink></li>
           </ul>
         </li>
 
@@ -51,10 +51,10 @@ const Navbar = () => {
           <li className="dropdown">
           <button className="dropdown-btn">Gestión Pedagógica</button>
           <ul className="dropdown-menu">
-            <li><a href="#">Modulo pedagógico</a></li>
-            <li><a href="#">Reglamento de evaluación</a></li>
-            <li><a href="#">Epa</a></li>
-            <li><a href="#">Estrategia de transición</a></li>
+          <li><NavLink to="/moduloPedagogico">Modulo pedagógico</NavLink></li>
+          <li><NavLink to="/reglamentoEvaluacion">Reglamento de evaluación</NavLink></li>
+          <li><NavLink to="/epa">Epa</NavLink></li>
+          <li><NavLink to="/estrategiaTransicion">Estrategia de transición</NavLink></li>
           </ul>
         </li>
 
@@ -62,12 +62,12 @@ const Navbar = () => {
           <li className="dropdown">
           <button className="dropdown-btn">Convivencia Escolar</button>
           <ul className="dropdown-menu">
-            <li><a href="#">Plan de la gestión de la convivencia escolar</a></li>
+          <li><NavLink to="/planConvivencia">Plan de la gestión de la convivencia escolar</NavLink></li>
           </ul>
         </li>
 
          {/* Dropdown Docentes */}
-         <li className="dropdown">
+          <li className="dropdown">
           <button className="dropdown-btn">Proyecto de integración escolar</button>
           <ul className="dropdown-menu">
             <li><a href="#">Plan de inclusión</a></li>
