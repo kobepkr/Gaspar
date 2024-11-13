@@ -71,7 +71,7 @@ const Navbar = () => {
           <button className="dropdown-btn">Proyecto de integración escolar</button>
           <ul className="dropdown-menu">
             <li><a href="#">Plan de inclusión</a></li>
-            <li><a href="#">Apollos NEE</a></li>
+            <li><a href="#">Apoyos NEE</a></li>
           </ul>
         </li>
 
@@ -92,8 +92,12 @@ const Navbar = () => {
         <li className="dropdown">
           <button className="dropdown-btn">Talleres JEC</button>
           <ul className="dropdown-menu">
-            <li><a href="#">TALLER DE NIVELACIÓN EN LENGUAJE</a></li>
-            <li><a href="#">TALLER EXTERNO FUTBOL TPS</a></li>
+            <li><a href="#">TALLER DE NIVELACIÓN</a></li>
+            <li><a href="#">TALLER DE PSICOMOTRICIDAD</a></li>
+            <li><a href="#">TALLER DE SOCIOEMOCIONAL</a></li>
+            <li><a href="#">TALLER DE INGLES</a></li>
+            <li><a href="#">TALLER DE FORMACIÓN CIUDADANA</a></li>
+            <li><a href="#">TALLER DE DEPORTE</a></li>
           </ul>
         </li>
 
