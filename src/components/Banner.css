@@ -91,15 +91,33 @@
   position: absolute;
   bottom: 20px;
   right: 40px;
-  font-size: 32px;
-  color: #e4405f; /* Color del logo de Instagram */
-  transition: transform 0.3s ease, color 0.3s ease;
+  font-size: 24px; /* Reduce el tamaño del icono */
+  color: #fff; /* Color del icono */
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  border-radius: 50%; /* Hacer el fondo circular */
+  padding: 10px; /* Reduce el tamaño del círculo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .instagram-icon:hover {
-  transform: scale(1.2); /* Efecto al hacer hover */
-  color: #f7f339; /* Cambio de color cuando el cursor está sobre el icono */
+  transform: scale(1.2); /* Efecto de zoom al hacer hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra más ligera */
 }
+
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+.instagram-icon {
+  animation: pulse 2s infinite;
+}
+
 
 /* Responsividad */
 @media (max-width: 768px) {
@@ -122,4 +140,17 @@
   .text-content h1, .text-content h3 {
     font-size: 1.5rem;
   }
+}
+/* Estilos para la imagen en la parte inferior derecha */
+.corner-image {
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  width: 120px; /* Ajusta el tamaño aquí si lo necesitas */
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.corner-image:hover {
+  transform: scale(1.1);
 }

@@ -1,15 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Banner.css';
-import { FaInstagram } from 'react-icons/fa'; // Importamos el ícono de Instagram
+import { FaInstagram } from 'react-icons/fa'; // Ícono de Instagram
+
+// Importamos las imágenes necesarias
+import bannerImage from '../assets/banner.jpg'; 
+import logoImage from '../assets/logo.png'; 
+import cornerImage from '../assets/gasparInsta.png'; // Nueva imagen que quieres en la esquina
 
 const Banner = () => {
   return (
     <div className="banner">
       <div className="banner-content">
-        {/* Envolvemos el logo en un Link para que redirija a la página de inicio */}
+        {/* Logo que redirige a la página de inicio */}
         <Link to="/">
-          <img src="./src/assets/logo.png" alt="Escuela Gaspar Cabrales" width="200" className="logo" />
+          <img src={logoImage} alt="Escuela Gaspar Cabrales" width="200" className="logo" />
         </Link>
         <div className="text-content">
           <h3>Escuela</h3>
@@ -24,6 +29,9 @@ const Banner = () => {
         <p>Haz clic aquí para más información.</p>
         <Link to="/matricula" className="btn-matriculas">Ver Más</Link>
       </div>
+
+      {/* Imagen en la parte inferior derecha */}
+      <img src={cornerImage} alt="Gaspar" className="corner-image" />
 
       {/* Icono de Instagram */}
       <a 

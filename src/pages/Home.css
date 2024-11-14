@@ -1,0 +1,84 @@
+.home-container {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #0077b6; /* Cambié el color aquí */
+  margin-bottom: 20px;
+}
+
+.activity-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.activity-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.activity-description {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.activity-description strong {
+  color: #0745f0;
+  font-weight: bold;
+}
+
+/* Estilos adicionales para las imágenes y videos */
+.media-container {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.media-title {
+  font-size: 1.8rem;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.activity-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo específico para el título del video */
+.video-title {
+  font-size: 1.8rem;
+  color: #0077b6;
+  margin-bottom: 20px;
+}
