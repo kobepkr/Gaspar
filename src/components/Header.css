@@ -1,7 +1,8 @@
 /* src/components/Header.css */
 .header {
-  background-color: #0077b6; /* Cambia el color del fondo si lo deseas */
+  background-color: #0077b6; /* Color de fondo */
   padding: 1rem;
+  box-sizing: border-box;
 }
 
 .header-content {
@@ -9,15 +10,37 @@
   justify-content: center; /* Centra todo el contenido de izquierda a derecha */
   align-items: center; /* Centra el contenido verticalmente */
   gap: 2rem; /* Espacio entre cada elemento */
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas */
 }
 
 .contact-info {
   display: flex;
   gap: 1rem; /* Espacio entre los items de contacto */
+  flex-wrap: wrap; /* Permite que los elementos de contacto se ajusten en varias filas si es necesario */
+  justify-content: center; /* Centra los elementos si se rompen en una nueva fila */
 }
 
 .contact-info span {
-  display: inline-block; /* Asegura que los items no se dividan en líneas nuevas */
-  font-size: 1rem; /* Ajusta el tamaño de la fuente */
-  color: white; /* Ajusta el color del texto */
+  display: inline-block;
+  font-size: 1rem;
+  color: white;
+  white-space: nowrap; /* Evita que los textos largos se dividan en varias líneas */
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column; /* Cambia la dirección de la fila a columna */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+  }
+
+  .contact-info {
+    flex-direction: column; /* Cambia los elementos de contacto a columna */
+    align-items: flex-start; /* Alinea los elementos de contacto a la izquierda */
+  }
+
+  .contact-info span {
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    margin-bottom: 0.5rem; /* Espacio entre los elementos de contacto */
+  }
 }

@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Banner from './components/Banner';
 import Navbar from './components/Navbar';
+import Carousel from './components/Carousel';
 import Mision from './pages/PEI/Mision';
 import Vision from './pages/PEI/Vision';
 import Sello from './pages/PEI/Sello';
@@ -40,10 +41,14 @@ import Ingles from './pages/JEC/Ingles';
 import Nivelacion from './pages/JEC/Nivelacion';
 import Psicomotricidad from './pages/JEC/Psicomotricidad';
 import Socioemocional from './pages/JEC/Socioemocional';
+import Matricula from './pages/Matricula/matricula';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Home from './pages/Home';
 
-function Home() {
-  return <h2>Bienvenido a la página de inicio</h2>;
-}
+
+
+
 
 function App() {
   return (
@@ -51,10 +56,13 @@ function App() {
       <div className="App">
         <Header />
         <Banner />
-        <Navbar />
+        <Navbar />     
+        <Carousel />
+        
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/matricula" element={<Matricula />} />
             <Route path="/mision" element={<Mision />} /> 
             <Route path="/vision" element={<Vision />} /> 
             <Route path="/sello" element={<Sello />} /> 

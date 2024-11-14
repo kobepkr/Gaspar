@@ -22,7 +22,7 @@ const Navbar = () => {
           <button className="dropdown-btn">Reglamento Interno</button>
           <ul className="dropdown-menu">
           <li><NavLink to="/manual">Manual</NavLink></li>
-          <li><NavLink to="/convivencia">Convivencia escolar</NavLink></li>
+          <li><NavLink to="/convivencia">Convivencia Escolar</NavLink></li>
           <li><NavLink to="/protocolos">Protocolos</NavLink></li>
           <li><NavLink to="/uniformes">Uniforme</NavLink></li>
           <li><NavLink to="/horarios">Horarios</NavLink></li>
@@ -30,7 +30,7 @@ const Navbar = () => {
         </li>
 
         <li className="dropdown">
-          <button className="dropdown-btn">Plan de mejora educativo (PME)</button>
+          <button className="dropdown-btn">Plan de Mejora Educativo (PME)</button>
           <ul className="dropdown-menu">
           <li><NavLink to="/objetivos">Objetivos</NavLink></li>
           <li><NavLink to="/acciones">Acciones</NavLink></li>
@@ -41,9 +41,9 @@ const Navbar = () => {
           <li className="dropdown">
           <button className="dropdown-btn">Comunidad</button>
           <ul className="dropdown-menu">
-          <li><NavLink to="/gestionDirectivo">Equipo de gestion directivo</NavLink></li>
-            <li><NavLink to="/docente">Equipo docente</NavLink></li>
-            <li><NavLink to="/asistenteEducacion">Equipo asistente de la educacón</NavLink></li>
+          <li><NavLink to="/gestionDirectivo">Equipo de Gestion Directivo</NavLink></li>
+            <li><NavLink to="/docente">Equipo Docente</NavLink></li>
+            <li><NavLink to="/asistenteEducacion">Equipo Asistente de la Educacón</NavLink></li>
           </ul>
         </li>
 
@@ -51,10 +51,10 @@ const Navbar = () => {
           <li className="dropdown">
           <button className="dropdown-btn">Gestión Pedagógica</button>
           <ul className="dropdown-menu">
-          <li><NavLink to="/moduloPedagogico">Modulo pedagógico</NavLink></li>
-          <li><NavLink to="/reglamentoEvaluacion">Reglamento de evaluación</NavLink></li>
+          <li><NavLink to="/moduloPedagogico">Modulo Pedagógico</NavLink></li>
+          <li><NavLink to="/reglamentoEvaluacion">Reglamento de Evaluación</NavLink></li>
           <li><NavLink to="/epa">Epa</NavLink></li>
-          <li><NavLink to="/estrategiaTransicion">Estrategia de transición</NavLink></li>
+          <li><NavLink to="/estrategiaTransicion">Estrategia de Transición</NavLink></li>
           </ul>
         </li>
 
@@ -62,15 +62,15 @@ const Navbar = () => {
           <li className="dropdown">
           <button className="dropdown-btn">Convivencia Escolar</button>
           <ul className="dropdown-menu">
-          <li><NavLink to="/planConvivencia">Plan de la gestión de la convivencia escolar</NavLink></li>
+          <li><NavLink to="/planConvivencia">Plan de la Gestión de la Convivencia Escolar</NavLink></li>
           </ul>
         </li>
 
          {/* Dropdown Docentes */}
           <li className="dropdown">
-          <button className="dropdown-btn">Proyecto de integración escolar</button>
+          <button className="dropdown-btn">Proyecto de Integración Escolar</button>
           <ul className="dropdown-menu">
-          <li><NavLink to="/planInclusion">Plan de inclusión</NavLink></li>
+          <li><NavLink to="/planInclusion">Plan de Inclusión</NavLink></li>
           <li><NavLink to="/apoyos">Apoyos NEE</NavLink></li>
           </ul>
         </li>

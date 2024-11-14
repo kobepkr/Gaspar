@@ -45,6 +45,47 @@
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
+.matriculas-card {
+  position: absolute;
+  bottom: 180px; /* Aumenté el valor para mover la card más arriba */
+  right: 60px; /* Posiciona la card en la esquina inferior derecha */
+  background-color: #ffefc5b7; /* Color suave de fondo */
+  color: #333333; /* Color de texto oscuro para contraste */
+  padding: 20px;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  text-align: center;
+  max-width: 250px;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.matriculas-card h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333333;
+}
+
+.matriculas-card p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #555555; /* Texto más suave */
+}
+
+.btn-matriculas {
+  background-color: #4caf50; /* Color verde suave */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-matriculas:hover {
+  background-color: #388e3c; /* Verde más oscuro al pasar el cursor */
+}
+
 /* Estilos para el ícono de Instagram */
 .instagram-icon {
   position: absolute;
@@ -58,4 +99,27 @@
 .instagram-icon:hover {
   transform: scale(1.2); /* Efecto al hacer hover */
   color: #f7f339; /* Cambio de color cuando el cursor está sobre el icono */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .matriculas-card {
+    bottom: 20px;
+    right: 20px;
+    max-width: 200px;
+  }
+  
+  .banner-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .banner-content img {
+    margin-bottom: 10px;
+  }
+
+  .text-content h1, .text-content h3 {
+    font-size: 1.5rem;
+  }
 }
