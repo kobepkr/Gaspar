@@ -24,7 +24,22 @@ import Objetivos from './pages/PME/Objetivos';
 import EPA from './pages/GestionPedagogica/EPA';
 import EstrategiaTrasicion from './pages/GestionPedagogica/EstrategiaTransicion';
 import ModuloPedagogico from './pages/GestionPedagogica/ModuloPedagogico'
-import ReglamentoEvaluacion from './pages/GestionPedagogica/ReglamentoEvaluacion'
+import ReglamentoEvaluacion from './pages/GestionPedagogica/ReglamentoEvaluacion';
+import Apoyos from './pages/ProyectoIntegracionEscolar/Apoyos';
+import PlanInclusion from './pages/ProyectoIntegracionEscolar/PlanInclusion';
+import Basquetbol from './pages/SEP/Basquetbol';
+import CheerLeaders from './pages/SEP/Cheerleaders';
+import Danza from './pages/SEP/Danza';
+import Gimnasia from './pages/SEP/Gimnasia';
+import LectoEscritura from './pages/SEP/lectoEscritura';
+import Musica from './pages/SEP/Musica';
+import Taekwando from './pages/SEP/Taekwando';
+import Deporte from './pages/JEC/Deporte';
+import FormacioCiudadana from './pages/JEC/FormacionCiudadana';
+import Ingles from './pages/JEC/Ingles';
+import Nivelacion from './pages/JEC/Nivelacion';
+import Psicomotricidad from './pages/JEC/Psicomotricidad';
+import Socioemocional from './pages/JEC/Socioemocional';
 
 function Home() {
   return <h2>Bienvenido a la página de inicio</h2>;
@@ -58,7 +73,24 @@ function App() {
             <Route path="/epa" element={<EPA />} /> 
             <Route path="/estrategiaTransicion" element={<EstrategiaTrasicion />} /> 
             <Route path="/moduloPedagogico" element={<ModuloPedagogico />} /> 
-            <Route path="/reglamentoEvaluacion" element={<ReglamentoEvaluacion />} />  
+            <Route path="/reglamentoEvaluacion" element={<ReglamentoEvaluacion />} />
+            <Route path="/apoyos" element={<Apoyos />} />
+            <Route path="/planInclusion" element={<PlanInclusion />} />  
+            <Route path="/basquetbol" element={<Basquetbol />} />  
+            <Route path="/cheerLeaders" element={<CheerLeaders />} />  
+            <Route path="/danza" element={<Danza />} />  
+            <Route path="/gimnasia" element={<Gimnasia />} />  
+            <Route path="/lectoEscritura" element={<LectoEscritura />} />  
+            <Route path="/musica" element={<Musica />} />
+            <Route path="/taekwando" element={<Taekwando />} />
+            <Route path="/deporte" element={<Deporte />} />   
+            <Route path="/FormacionCiudadana" element={<FormacioCiudadana />} />   
+            <Route path="/ingles" element={<Ingles />} />   
+            <Route path="/nivelacion" element={<Nivelacion />} />   
+            <Route path="/psicomotricidad" element={<Psicomotricidad />} />   
+            <Route path="/socioemocional" element={<Socioemocional />} />   
+
+
           </Routes>
         </main>
         <Footer />

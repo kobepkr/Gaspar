@@ -41,9 +41,9 @@ const Navbar = () => {
           <li className="dropdown">
           <button className="dropdown-btn">Comunidad</button>
           <ul className="dropdown-menu">
-          <li><NavLink to="/asistenteEducacion">Equipo de gestion directivo</NavLink></li>
+          <li><NavLink to="/gestionDirectivo">Equipo de gestion directivo</NavLink></li>
             <li><NavLink to="/docente">Equipo docente</NavLink></li>
-            <li><NavLink to="/gestionDirectivo">Equipo asistente de la educacón</NavLink></li>
+            <li><NavLink to="/asistenteEducacion">Equipo asistente de la educacón</NavLink></li>
           </ul>
         </li>
 
@@ -70,8 +70,8 @@ const Navbar = () => {
           <li className="dropdown">
           <button className="dropdown-btn">Proyecto de integración escolar</button>
           <ul className="dropdown-menu">
-            <li><a href="#">Plan de inclusión</a></li>
-            <li><a href="#">Apoyos NEE</a></li>
+          <li><NavLink to="/planInclusion">Plan de inclusión</NavLink></li>
+          <li><NavLink to="/apoyos">Apoyos NEE</NavLink></li>
           </ul>
         </li>
 
@@ -79,25 +79,25 @@ const Navbar = () => {
         <li className="dropdown">
           <button className="dropdown-btn">Talleres SEP</button>
           <ul className="dropdown-menu">
-            <li><a href="#">TALLER DE TAEKWANDO</a></li>
-            <li><a href="#">TALLER DE CHEERLEADERS</a></li>
-            <li><a href="#">TALLER DE BASQUETBOL</a></li>
-            <li><a href="#">TALLER DE MÚSICA</a></li>
-            <li><a href="#">TALLER DE DANZA</a></li>
-            <li><a href="#">TALLER DE GIMNASIA ARTÍSTICA</a></li>
-            <li><a href="#">TALLER DE LECTOESCRITURA</a></li>
+          <li><NavLink to="/taekwando">TALLER DE TAEKWANDO</NavLink></li>
+          <li><NavLink to="/cheerLeaders">TALLER DE CHEERLEADERS</NavLink></li>
+          <li><NavLink to="/basquetbol">TALLER DE BASQUETBOL</NavLink></li>
+          <li><NavLink to="/musica">TALLER DE MÚSICA</NavLink></li>
+          <li><NavLink to="/danza">TALLER DE DANZA</NavLink></li>
+          <li><NavLink to="/gimnasia">TALLER DE GIMNASIA ARTÍSTICA</NavLink></li>
+          <li><NavLink to="/lectoescritura">TALLER DE LECTOESCRITURA</NavLink></li>
           </ul>
         </li>
 
         <li className="dropdown">
           <button className="dropdown-btn">Talleres JEC</button>
           <ul className="dropdown-menu">
-            <li><a href="#">TALLER DE NIVELACIÓN</a></li>
-            <li><a href="#">TALLER DE PSICOMOTRICIDAD</a></li>
-            <li><a href="#">TALLER DE SOCIOEMOCIONAL</a></li>
-            <li><a href="#">TALLER DE INGLES</a></li>
-            <li><a href="#">TALLER DE FORMACIÓN CIUDADANA</a></li>
-            <li><a href="#">TALLER DE DEPORTE</a></li>
+          <li><NavLink to="/nivelacion">TALLER DE NIVELACIÓN</NavLink></li>
+          <li><NavLink to="/psicomotricidad">TALLER DE PSICOMOTRICIDAD</NavLink></li>
+          <li><NavLink to="/socioemocional">TALLER DE SOCIOEMOCIONAL</NavLink></li>
+          <li><NavLink to="/ingles">TALLER DE INGLES</NavLink></li>
+          <li><NavLink to="/formacionCiudadana">TALLER DE FORMACIÓN CIUDADANA</NavLink></li>
+          <li><NavLink to="/deporte">TALLER DE DEPORTE</NavLink></li>
           </ul>
         </li>
 

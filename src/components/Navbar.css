@@ -1,71 +1,99 @@
 /* Navbar styles */
 .navbar {
-    background-color: #0077b6;
-    padding: 1rem;
-  }
-  
-  .navbar-links {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    justify-content: center; /* Centra los enlaces horizontalmente */
-    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
-  }
-  
-  .navbar-links li {
-    position: relative;
-  }
-  
-  /* Dropdown button styles */
-  .dropdown-btn {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-  
- /* Dropdown menu styles */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #00b4d8;
-    padding: 0.5rem;
-    list-style: none;
-    margin: 0;
-    border-radius: 5px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    white-space: nowrap; /* Esto evita que el texto se divida en varias líneas */
-    width: auto; /* Asegura que el ancho se ajuste al contenido */
-    min-width: 200px; /* Esto garantiza que el fondo tenga un mínimo de ancho para que las frases largas no se corten */
-  }
-  
-  /* Ensure each list item inside dropdown stretches to fit content */
-  .dropdown-menu li {
-    white-space: nowrap; /* Evita que las frases largas se partan */
-    margin: 0.5rem;
-  }
-  
-  .dropdown-menu li a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    padding: 0.5rem;
-  }
-  
-  /* Show dropdown on hover */
-  .dropdown:hover .dropdown-menu {
-    display: block; /* Cambié a `block` para mostrar el menú correctamente */
-  }
-  /* Hover effect on dropdown items */
-.dropdown-menu li a:hover {
-  background-color: #0077b6; /* Cambia el color al pasar el cursor */
-  color: #fff; /* Mantén el color del texto */
+  background-color: #0077b6;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Permite que el contenido se ajuste en pantallas pequeñas */
 }
 
-  
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* Ajusta los elementos en filas cuando la pantalla es pequeña */
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.dropdown-btn:hover {
+  color: #f7f339;
+}
+
+/* Estilos del menú desplegable */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f7f339;
+  padding: 0.5rem;
+  list-style: none;
+  margin: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.dropdown-menu li {
+  white-space: nowrap;
+  margin: 0.5rem;
+}
+
+.dropdown-menu li a {
+  color: #0e0e0e;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #0077b6;
+  color: #fff;
+}
+
+/* Mostrar el menú desplegable al hacer hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar-links {
+    flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
+    align-items: center;
+  }
+
+  .dropdown-menu {
+    position: relative;
+    transform: translateX(0);
+    top: auto;
+    left: auto;
+    min-width: 100%;
+    box-shadow: none;
+  }
+
+  .dropdown-menu li {
+    text-align: center;
+    width: 100%;
+  }
+}
