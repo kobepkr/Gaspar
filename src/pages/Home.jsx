@@ -79,7 +79,7 @@ const settings = {
 
         {/* Sección de video */}
         <div className="media-container">
-  <h3 className="video-title">Video Recopilatorio de la Actividad</h3>
+  <h3 className="video-title">Video Recopilatorio de la Actividad.</h3>
   <div className="video-embed">
     <iframe
       width="560"
