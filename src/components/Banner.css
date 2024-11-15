@@ -25,24 +25,34 @@
 
 .banner-content {
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-start; /* Alinear todo el contenido a la izquierda */
   align-items: center;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 5px 20px; /* Agregar un pequeño padding lateral si es necesario */
+}
+
+.text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinear el texto a la izquierda */
+  margin-left: -50px; /* Asegurarse de que el texto esté pegado a la izquierda */
 }
 
 .banner-content img {
-  margin-right: 5px;
-  cursor: pointer; /* Cambia el cursor al pasar sobre el logo */
+  margin-right: 8px; /* Reducir el espacio entre el logo y el texto */
+  cursor: pointer;
+  width: 250px; /* Reducir el tamaño del logo */
 }
 
-.text-content h3, .text-content h1 {
+.text-content h3, 
+.text-content h1 {
   margin: 0;
-  text-align: center;
-  padding: 10px;
+  padding: 5px 0; /* Ajustar el padding para un mejor espaciado */
   color: yellow;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  line-height: 1.2;
 }
 
 .matriculas-card {
@@ -86,38 +96,51 @@
   background-color: #388e3c; /* Verde más oscuro al pasar el cursor */
 }
 
-/* Estilos para el ícono de Instagram */
-.instagram-icon {
+/* Estilos para los íconos de Instagram y Facebook */
+.social-media {
   position: absolute;
-  bottom: 20px;
+  bottom: 80px;
   right: 40px;
-  font-size: 24px; /* Reduce el tamaño del icono */
-  color: #fff; /* Color del icono */
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-  border-radius: 50%; /* Hacer el fondo circular */
-  padding: 10px; /* Reduce el tamaño del círculo */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-media p {
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+}
+
+/* Contenedor de los íconos */
+.social-icons {
+  display: flex;
+  gap: 15px; /* Espacio entre los íconos */
+}
+
+/* Estilos para los íconos */
+.instagram-icon, .facebook-icon {
+  font-size: 24px;
+  color: #fff;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.instagram-icon:hover {
-  transform: scale(1.2); /* Efecto de zoom al hacer hover */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra más ligera */
-}
-
-
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-}
-
 .instagram-icon {
-  animation: pulse 2s infinite;
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
+.facebook-icon {
+  background: linear-gradient(45deg, #1877f2, #4e8bf5);
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
 
 /* Responsividad */
 @media (max-width: 768px) {
@@ -126,13 +149,13 @@
     right: 20px;
     max-width: 200px;
   }
-  
+
   .banner-content {
     flex-direction: column;
     align-items: center;
     text-align: center;
   }
-  
+
   .banner-content img {
     margin-bottom: 10px;
   }
@@ -140,7 +163,17 @@
   .text-content h1, .text-content h3 {
     font-size: 1.5rem;
   }
+
+  .social-media {
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .social-icons {
+    gap: 10px;
+  }
 }
+
 /* Estilos para la imagen en la parte inferior derecha */
 .corner-image {
   position: absolute;
@@ -149,8 +182,4 @@
   width: 120px; /* Ajusta el tamaño aquí si lo necesitas */
   height: auto;
   transition: transform 0.3s ease;
-}
-
-.corner-image:hover {
-  transform: scale(1.1);
 }

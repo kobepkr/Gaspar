@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Banner.css';
-import { FaInstagram } from 'react-icons/fa'; // Ícono de Instagram
+import { FaInstagram, FaFacebook } from 'react-icons/fa'; // Íconos de Instagram y Facebook
 
 // Importamos las imágenes necesarias
 import bannerImage from '../assets/banner.jpg'; 
 import logoImage from '../assets/logo.png'; 
-import cornerImage from '../assets/gasparInsta.png'; // Nueva imagen que quieres en la esquina
+import cornerImage from '../assets/gasparInsta.png'; // Nueva imagen en la esquina
 
 const Banner = () => {
   return (
@@ -33,15 +33,28 @@ const Banner = () => {
       {/* Imagen en la parte inferior derecha */}
       <img src={cornerImage} alt="Gaspar" className="corner-image" />
 
-      {/* Icono de Instagram */}
-      <a 
-        href="https://www.instagram.com/escuela.gaspar.cabrales" 
-        target="_blank" 
-        rel="noopener noreferrer" 
-        className="instagram-icon"
-      >
-        <FaInstagram />
-      </a>
+      {/* Texto e íconos de redes sociales */}
+      <div className="social-media">
+        <p>Síguenos en nuestras redes sociales</p>
+        <div className="social-icons">
+          <a 
+            href="https://www.instagram.com/escuela.gaspar.cabralesa" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="instagram-icon"
+          >
+            <FaInstagram />
+          </a>
+          <a 
+            href="https://www.facebook.com/EscuelaGasparCabralesValparaiso-Oficial" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="facebook-icon"
+          >
+            <FaFacebook />
+          </a>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,3 +1,5 @@
+
+
 .home-container {
   margin: 20px;
   font-family: Arial, sans-serif;
@@ -82,3 +84,26 @@
   color: #0077b6;
   margin-bottom: 20px;
 }
+.carousel-container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-section {
+  margin-top: 20px;
+}
+
+.carousel-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
