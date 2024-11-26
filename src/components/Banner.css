@@ -1,15 +1,14 @@
-/* src/components/Banner.css */
+
 .banner {
-  background-image: url('./src/assets/banner.jpg');
+  background-image: url('../assets/banner.jpg'); /* Usa una ruta absoluta */
   background-size: cover;
   background-position: center 50%;
-  padding: 30px;
-  color: white;
-  width: 100%;
-  height: 400px;
+  height: 400px; /* Asegúrate de que la altura esté definida */
   box-sizing: border-box;
-  position: relative; /* Necesario para posicionar el ícono de Instagram */
+  position: relative;
+  background-attachment: fixed; /* Esto ayuda a que la imagen no se desplace */
 }
+
 
 .banner::before {
   content: '';

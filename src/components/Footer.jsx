@@ -15,7 +15,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Información del Colegio</h3>
           <p>Escuela Gaspar Cabrales</p>
-          <p>Almte. Simpson 152, Valparaíso, Chile</p>
+          <p>Almte. Simpson 96, Valparaíso, Chile</p>
           <p>Teléfono: (2) 3352 4289</p>
           <p>Email: contacto@escuelagasparcabrales.cl</p>
         </div>
