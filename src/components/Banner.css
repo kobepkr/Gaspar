@@ -1,6 +1,5 @@
 /* src/components/Banner.css */
 .banner {
-  background-color: #0745f0;
   background-image: url('./src/assets/banner.jpg');
   background-size: cover;
   background-position: center 50%;
