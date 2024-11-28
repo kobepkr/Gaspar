@@ -1,15 +1,14 @@
-
+/* Estilos del banner */
 .banner {
-  background-image: url('../assets/banner.jpg');  /* Usa una ruta absoluta */
   background-size: cover;
   background-position: center 50%;
-  height: 400px; /* Asegúrate de que la altura esté definida */
+  height: 400px; /* Ajustar la altura del banner */
   box-sizing: border-box;
   position: relative;
-  background-attachment: fixed; /* Esto ayuda a que la imagen no se desplace */
+  /* Se eliminó la propiedad background-attachment: fixed; */
 }
 
-
+/* Fondo oscuro encima de la imagen */
 .banner::before {
   content: '';
   position: absolute;
@@ -17,71 +16,72 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* Un fondo semi-transparente */
   z-index: -1;
 }
 
+/* Contenido del banner */
 .banner-content {
   display: flex;
-  justify-content: flex-start; /* Alinear todo el contenido a la izquierda */
+  justify-content: flex-start; /* Alineación del contenido a la izquierda */
   align-items: center;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 5px 20px; /* Agregar un pequeño padding lateral si es necesario */
+  padding: 5px 20px;
 }
 
+/* Estilo para el texto dentro del banner */
 .text-content {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinear el texto a la izquierda */
-  margin-left: -50px; /* Asegurarse de que el texto esté pegado a la izquierda */
+  align-items: center;
+  margin-left: -50px;
 }
 
 .banner-content img {
-  margin-right: 8px; /* Reducir el espacio entre el logo y el texto */
+  margin-right: 8px;
   cursor: pointer;
-  width: 250px; /* Reducir el tamaño del logo */
+  width: 250px; /* Tamaño reducido del logo */
 }
 
-.text-content h3, 
-.text-content h1 {
+.text-content h3, .text-content h1 {
   margin: 0;
-  padding: 5px 0; /* Ajustar el padding para un mejor espaciado */
+  padding: 5px 0;
   color: yellow;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
   line-height: 1.2;
 }
 
+/* Card de Matrículas */
 .matriculas-card {
   position: absolute;
-  bottom: 180px; /* Aumenté el valor para mover la card más arriba */
-  right: 60px; /* Posiciona la card en la esquina inferior derecha */
-  background-color: #ffefc5b7; /* Color suave de fondo */
-  color: #333333; /* Color de texto oscuro para contraste */
+  bottom: 180px;
+  right: 60px;
+  background-color: #ffefc5b7;
+  color: #333333;
   padding: 20px;
-  border-radius: 10px; /* Bordes redondeados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
   max-width: 250px;
   z-index: 10;
   transition: transform 0.3s ease;
 }
 
+/* Estilos para la tarjeta de Matrículas */
 .matriculas-card h2 {
   margin: 0;
   font-size: 1.5rem;
-  color: #333333;
 }
 
 .matriculas-card p {
   font-size: 1rem;
   margin: 10px 0;
-  color: #555555; /* Texto más suave */
 }
 
 .btn-matriculas {
-  background-color: #4caf50; /* Color verde suave */
+  background-color: #4caf50;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
@@ -91,10 +91,10 @@
 }
 
 .btn-matriculas:hover {
-  background-color: #388e3c; /* Verde más oscuro al pasar el cursor */
+  background-color: #388e3c; /* Color más oscuro al pasar el cursor */
 }
 
-/* Estilos para los íconos de Instagram y Facebook */
+/* Estilos para los íconos de redes sociales */
 .social-media {
   position: absolute;
   bottom: 80px;
@@ -109,38 +109,48 @@
   font-size: 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   margin-bottom: 10px;
+  color: white; /* Esto hará que el texto sea blanco */
 }
 
 /* Contenedor de los íconos */
 .social-icons {
   display: flex;
-  gap: 15px; /* Espacio entre los íconos */
+  gap: 15px;
 }
 
-/* Estilos para los íconos */
+/* Estilo para los íconos de Instagram y Facebook */
 .instagram-icon, .facebook-icon {
-  font-size: 24px;
+  font-size: 20px; /* Puedes ajustar el tamaño del ícono si es necesario */
   color: #fff;
-  border-radius: 50%;
-  padding: 10px;
+  border-radius: 50%; /* Hace que el contorno sea circular */
+  padding: 10px; /* Reduce el padding para un círculo más pequeño */
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 15px; /* Tamaño del círculo */
+  height: 15px; /* Mantener la altura igual para que sea circular */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra el ícono dentro del círculo */
 }
 
+/* Fondo para el ícono de Instagram */
 .instagram-icon {
   background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 
+/* Fondo para el ícono de Facebook */
 .facebook-icon {
   background: linear-gradient(45deg, #1877f2, #4e8bf5);
 }
 
-.social-icon:hover {
+/* Efecto de hover */
+.social-icons a:hover {
   transform: scale(1.2);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsividad */
+
+/* Responsividad para pantallas más pequeñas */
 @media (max-width: 768px) {
   .matriculas-card {
     bottom: 20px;
@@ -172,12 +182,38 @@
   }
 }
 
-/* Estilos para la imagen en la parte inferior derecha */
+/* Estilos para la imagen de la esquina inferior derecha */
 .corner-image {
   position: absolute;
   bottom: 0px;
-  left: 40px;
-  width: 120px; /* Ajusta el tamaño aquí si lo necesitas */
+  left: 120px;
+  width: 120px;
   height: auto;
   transition: transform 0.3s ease;
+}
+
+
+
+/* Efecto de rebote al pasar el mouse */
+.corner-image:hover {
+  animation: bounce 0.6s ease-in-out;
+}
+
+/* Definir la animación de rebote */
+@keyframes bounce {
+  0% {
+    transform: translateY(0); /* Posición inicial */
+  }
+  30% {
+    transform: translateY(-10px); /* Subir un poco */
+  }
+  50% {
+    transform: translateY(0); /* Volver a la posición original */
+  }
+  70% {
+    transform: translateY(-5px); /* Subir menos */
+  }
+  100% {
+    transform: translateY(0); /* Volver a la posición original */
+  }
 }

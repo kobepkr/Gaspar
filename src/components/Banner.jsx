@@ -4,13 +4,13 @@ import './Banner.css';
 import { FaInstagram, FaFacebook } from 'react-icons/fa'; // Íconos de Instagram y Facebook
 
 // Importamos las imágenes necesarias
-import bannerImage from '../assets/banner.jpg'; 
+import bannerImage from '../assets/banner.jpg';  // Importamos la imagen del banner
 import logoImage from '../assets/logo.png'; 
 import cornerImage from '../assets/gasparInsta.png'; // Nueva imagen en la esquina
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <div className="banner" style={{ backgroundImage: `url(${bannerImage})` }}>
       <div className="banner-content">
         {/* Logo que redirige a la página de inicio */}
         <Link to="/">
