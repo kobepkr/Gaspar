@@ -8,7 +8,7 @@ const Header = () => {
         <div className="contact-info">
           <span>📞 Teléfono: (2) 3352 4289</span>
           <span>📧 Email: contacto@escuelagasparcabrales.cl</span>
-          <span>📍 Dirección: Almte. Simpson 96, Valparaíso</span>
+          <span>📍 Dirección: Almte. Simpson 96, Valparaíso.</span>
         </div>
       </div>
     </header>
