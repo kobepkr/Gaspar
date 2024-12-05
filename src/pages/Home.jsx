@@ -55,15 +55,8 @@ const settings = {
           Desde deliciosos platos caseros hasta comida rápida y repostería, los asistentes tuvieron la oportunidad de disfrutar
           y adquirir una variedad de artículos en un entorno cálido y ameno.
         </p>
-        <p className="activity-description">
-          Más allá de la recaudación de fondos, la Tarde Familiar fue una oportunidad invaluable para fortalecer los
-          lazos entre las familias, promoviendo un espíritu de unidad y apoyo mutuo. Fue un evento que reflejó el compromiso
-          y la solidaridad que caracterizan a nuestra comunidad escolar, dejando claro que juntos podemos alcanzar grandes logros.
-        </p>
-        <p className="activity-description">
-          Agradecemos sinceramente a todos los apoderados, estudiantes y colaboradores que hicieron posible esta tarde
-          inolvidable. ¡Esperamos con entusiasmo la próxima edición para seguir construyendo estos lazos tan especiales!
-        </p>
+      
+        
 
         {/* Sección de carrusel */}
         <div className="carousel-section">
@@ -77,13 +70,11 @@ const settings = {
           </Slider>
         </div>
 
-        {/* Sección de video */}
-        <div className="media-container">
+{/* Sección de video */}
+<div className="media-container">
   <h3 className="video-title">Video Recopilatorio de la Actividad.</h3>
-  <div className="video-embed">
+  <div className="video-container">
     <iframe
-      width="560"
-      height="315"
       src="https://www.youtube.com/embed/vZv9-TWdBJM"
       title="Video Recopilatorio"
       frameBorder="0"
@@ -92,6 +83,7 @@ const settings = {
     ></iframe>
   </div>
 </div>
+
 
       </div>
     </div>
