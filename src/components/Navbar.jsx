@@ -12,8 +12,6 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        
-
         {/* Ícono de hamburguesa para pantallas pequeñas */}
         <div className="hamburger" onClick={toggleMenu}>
           <span className="bar"></span>

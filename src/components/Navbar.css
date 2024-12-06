@@ -14,6 +14,7 @@
   width: 100%;
 }
 
+/* Menú principal (en pantallas grandes) */
 .navbar-links {
   display: flex;
   gap: 1.5rem;
@@ -26,7 +27,11 @@
   flex-wrap: wrap; /* Ajusta los elementos en filas cuando la pantalla es pequeña */
 }
 
-/* Estilos del menú desplegable */
+.navbar-links li {
+  position: relative;
+}
+
+/* Estilos del botón desplegable */
 .dropdown-btn {
   background: none;
   border: none;
@@ -40,6 +45,7 @@
   color: #f7f339;
 }
 
+/* Estilos del menú desplegable */
 .dropdown-menu {
   display: none;
   position: absolute;
@@ -74,13 +80,14 @@
   color: #fff;
 }
 
+/* Mostrar el menú desplegable al hacer hover */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
 
-/* Estilos para el ícono de hamburguesa */
+/* Ícono de hamburguesa */
 .hamburger {
-  display: none;
+  display: none; /* Ocultado por defecto */
   flex-direction: column;
   cursor: pointer;
   gap: 5px;
@@ -127,4 +134,3 @@
     width: 100%;
   }
 }
-

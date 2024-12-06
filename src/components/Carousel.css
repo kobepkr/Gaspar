@@ -4,6 +4,7 @@
   width: 100%;               /* Usa el 100% del ancho disponible */
   max-width: 100%;           /* No limita el tamaño máximo, pero puede ajustarse según lo necesites */
   margin: 0 auto;            /* Centra el carrusel horizontalmente */
+  padding: 20px;             /* Añadir espacio alrededor del carrusel */
   box-sizing: border-box;    /* Incluye el padding en el cálculo del ancho */
   overflow: hidden;          /* Elimina cualquier contenido que se desborde */
 }
