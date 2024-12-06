@@ -23,12 +23,13 @@ const Banner = () => {
         </div>
       </div>
 
-      {/* Card de Matrículas 2025 */}
-      <div className="matriculas-card">
-        <h2>¡Proceso de Matrículas 2025!</h2>
-        <p>Haz clic aquí para más información.</p>
-        <Link to="/matricula" className="btn-matriculas">Ver Más</Link>
-      </div>
+   {/* Card de Matrículas 2025 */}
+<div className="matriculas-card">
+  <h2>¡Proceso de Matrículas 2025!</h2>
+  <p>Haz clic aquí para más información.</p>
+  <Link to="/matricula" className="btn-matriculas">Ver Más</Link>
+</div>
+
 
       {/* Imagen en la parte inferior derecha */}
       <img src={cornerImage} alt="Gaspar" className="corner-image" />

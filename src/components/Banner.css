@@ -5,7 +5,6 @@
   height: 400px; /* Ajustar la altura del banner */
   box-sizing: border-box;
   position: relative;
-  /* Se eliminó la propiedad background-attachment: fixed; */
 }
 
 /* Fondo oscuro encima de la imagen */
@@ -53,11 +52,61 @@
   line-height: 1.2;
 }
 
+/* Estilos para los íconos de redes sociales dentro del banner */
+.social-media {
+  position: absolute;
+  top: 20px; /* Coloca los íconos en la parte superior */
+  right: 20px; /* Mueve los íconos hacia la derecha */
+  display: flex; /* Usamos flexbox */
+  flex-direction: row; /* Alineación horizontal (de izquierda a derecha) */
+  gap: 15px; /* Espacio entre los íconos */
+  align-items: center; /* Asegura que los íconos estén alineados verticalmente */
+}
+
+/* Estilo para el texto de redes sociales */
+.social-media p {
+  font-size: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Estilos para los íconos de Instagram y Facebook */
+.instagram-icon, .facebook-icon {
+  font-size: 24px; /* Tamaño ajustado para los íconos */
+  color: #fff;
+  border-radius: 50%; /* Hace que el contorno sea circular */
+  padding: 10px; /* Padding ajustado */
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 20px; /* Tamaño del círculo */
+  height: 20px; /* Tamaño del círculo */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centra el ícono dentro del círculo */
+}
+
+/* Fondo para el ícono de Instagram */
+.instagram-icon {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+}
+
+/* Fondo para el ícono de Facebook */
+.facebook-icon {
+  background: linear-gradient(45deg, #1877f2, #4e8bf5);
+}
+
+/* Efecto de hover */
+.social-icons a:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 /* Card de Matrículas */
 .matriculas-card {
   position: absolute;
-  bottom: 180px;
-  right: 60px;
+  bottom: 20px; /* Coloca la tarjeta en la parte inferior */
+  right: 20px;  /* Coloca la tarjeta a la derecha */
   background-color: #ffefc5b7;
   color: #333333;
   padding: 20px;
@@ -94,62 +143,6 @@
   background-color: #388e3c; /* Color más oscuro al pasar el cursor */
 }
 
-/* Estilos para los íconos de redes sociales */
-.social-media {
-  position: absolute;
-  bottom: 80px;
-  right: 40px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.social-media p {
-  font-size: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  margin-bottom: 10px;
-  color: white; /* Esto hará que el texto sea blanco */
-}
-
-/* Contenedor de los íconos */
-.social-icons {
-  display: flex;
-  gap: 15px;
-}
-
-/* Estilo para los íconos de Instagram y Facebook */
-.instagram-icon, .facebook-icon {
-  font-size: 20px; /* Puedes ajustar el tamaño del ícono si es necesario */
-  color: #fff;
-  border-radius: 50%; /* Hace que el contorno sea circular */
-  padding: 10px; /* Reduce el padding para un círculo más pequeño */
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 15px; /* Tamaño del círculo */
-  height: 15px; /* Mantener la altura igual para que sea circular */
-  display: flex;
-  justify-content: center;
-  align-items: center; /* Centra el ícono dentro del círculo */
-}
-
-/* Fondo para el ícono de Instagram */
-.instagram-icon {
-  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
-}
-
-/* Fondo para el ícono de Facebook */
-.facebook-icon {
-  background: linear-gradient(45deg, #1877f2, #4e8bf5);
-}
-
-/* Efecto de hover */
-.social-icons a:hover {
-  transform: scale(1.2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-
 /* Responsividad para pantallas más pequeñas */
 @media (max-width: 768px) {
   .matriculas-card {
@@ -173,12 +166,12 @@
   }
 
   .social-media {
-    bottom: 20px;
-    right: 20px;
+    top: 20px;
+    right: 20px; /* Ajustamos la ubicación para pantallas pequeñas */
   }
 
   .social-icons {
-    gap: 10px;
+    gap: 20px;
   }
 }
 
@@ -191,8 +184,6 @@
   height: auto;
   transition: transform 0.3s ease;
 }
-
-
 
 /* Efecto de rebote al pasar el mouse */
 .corner-image:hover {
