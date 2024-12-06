@@ -1,30 +1,31 @@
 /* src/components/Carousel.css */
 
 .carousel-container {
-  width: 100%; /* Ocupa todo el ancho disponible */
-  max-width: 100%; /* No limita el tamaño máximo */
-  margin: 0 auto; /* Centra el carrusel */
-  padding: 20px; /* Añadir espacio alrededor del carrusel */
+  width: 100%;               /* Usa el 100% del ancho disponible */
+  max-width: 100%;           /* No limita el tamaño máximo, pero puede ajustarse según lo necesites */
+  margin: 0 auto;            /* Centra el carrusel horizontalmente */
+  box-sizing: border-box;    /* Incluye el padding en el cálculo del ancho */
+  overflow: hidden;          /* Elimina cualquier contenido que se desborde */
 }
 
 .carousel-image {
-  width: 100%; /* Las imágenes ocuparán el 100% del ancho de su contenedor */
-  height: auto; /* Mantiene la relación de aspecto */
-  object-fit: cover; /* Asegura que la imagen se recorte si es necesario */
-  border-radius: 8px; /* Bordes redondeados si lo deseas */
+  width: 100%;               /* Las imágenes ocuparán el 100% del ancho de su contenedor */
+  height: auto;              /* Mantiene la relación de aspecto */
+  object-fit: cover;         /* Recorta la imagen para ajustarla */
+  border-radius: 8px;        /* Bordes redondeados si lo deseas */
   transition: transform 0.3s ease; /* Efecto de transición al hacer hover */
 }
 
 /* Reducir las imágenes para que no usen todo el espacio */
 .carousel-container .slick-slide {
-  display: flex; /* Usamos flexbox para centrar las imágenes */
-  justify-content: center; /* Centra cada imagen */
-  align-items: center; /* Centra verticalmente */
+  display: flex;             /* Usamos flexbox para centrar las imágenes */
+  justify-content: center;   /* Centra cada imagen */
+  align-items: center;       /* Centra verticalmente */
 }
 
 .carousel-image {
-  width: 80%; /* Hacemos las imágenes más pequeñas, puedes ajustar este valor */
-  max-height: 250px; /* Limita la altura de las imágenes */
+  width: 80%;                /* Hacemos las imágenes más pequeñas (ajústalo según necesites) */
+  max-height: 250px;         /* Limita la altura de las imágenes */
 }
 
 /* Efecto de hover para aumentar ligeramente el tamaño de la imagen */
@@ -32,14 +33,7 @@
   transform: scale(1.05);
 }
 
-.carousel-video {
-  width: 100%; /* Asegura que el video ocupe todo el ancho del carrusel */
-  height: auto; /* Mantiene la relación de aspecto del video */
-  object-fit: cover; /* Recorta el video para ajustarlo al contenedor */
-  display: block; /* Elimina cualquier espacio debajo del video */
-}
-
-/* Si deseas eliminar los puntos de navegación, usa esto */
+/* Eliminar los puntos de navegación, si es necesario */
 .slick-dots {
   display: none;
 }
@@ -49,4 +43,10 @@
   margin: 0;
   padding: 0;
   display: inline-block;
+}
+
+.slick-track {
+  display: flex;
+  justify-content: center;    /* Asegura que las imágenes se centren */
+  align-items: center;        /* Alinea las imágenes verticalmente */
 }
