@@ -26,6 +26,26 @@ const Home = () => {
 
 ];
 
+const homeImages2 = [
+  { src: '/tf51.jpg', alt: 'Imagen de la actividad 5' },
+  { src: '/tf52.jpg', alt: 'Imagen de la actividad 2' },
+  { src: '/tf53.jpg', alt: 'Imagen de la actividad 3' },
+  { src: '/tf54.jpg', alt: 'Imagen de la actividad 4' },
+  { src: '/tf55.jpg', alt: 'Imagen de la actividad 4' },
+  { src: '/tf56.jpg', alt: 'Imagen de la actividad 4' },
+  { src: '/tf57.jpg', alt: 'Imagen de la actividad 4' },
+  { src: '/tf58.jpg', alt: 'Imagen de la actividad 4' },
+  { src: '/tf59.jpg', alt: 'Imagen de la actividad 4' },
+  { src: '/tf510.jpg', alt: 'Imagen de la actividad 4' },
+  { src: '/tf511.jpg', alt: 'Imagen de la actividad 4' },
+  { src: '/tf512.jpg', alt: 'Imagen de la actividad 4' },
+  { src: '/tf513.jpg', alt: 'Imagen de la actividad 4' },
+  { src: '/tf514.jpg', alt: 'Imagen de la actividad 4' },
+  { src: '/tf515.jpg', alt: 'Imagen de la actividad 4' },
+
+
+];
+
 // Configuración del carrusel
 const settings = {
   dots: true, // Muestra los puntos de navegación
@@ -42,6 +62,51 @@ const settings = {
     <div className="home-container">
       <h1 className="title">Últimas Actividades Realizadas</h1>
       <div className="activity-container">
+        <h2 className="activity-title">Tarde Familiar N° 5: Ultimas Actividades del año.</h2>
+        <p className="activity-description">
+          Este jueves 5 de diciembre se celebró la quinta y última Tarde Familiar del año,
+            en la que nos reunimos nuevamente con nuestros apoderados y alumnos de nuestra
+            querida escuela. En esta ocasión, se realizaron diversas actividades para los 
+            niños, quienes tuvieron la oportunidad de correr, cantar y bailar en varias
+            ocasiones. Además, los apoderados también participaron activamente, creando 
+            una tarde familiar muy especial.
+        </p>
+        <p className="activity-description">
+        Se vendieron diversos productos, como ropa y comida rápida, con el propósito de generar
+          recursos para los distintos cursos, que se destinarán a actividades como paseos y fiestas
+          de fin de año. Este tipo de eventos nos permite seguir fortaleciendo nuestra comunidad, 
+          que sigue siendo un ejemplo de unidad y colaboración, tanto este año como en el próximo.
+        </p>
+      
+        
+
+        {/* Sección de carrusel */}
+        <div className="carousel-section">
+          <h3 className="carousel-title">Galería de Imágenes</h3>
+          <Slider {...settings}>
+            {homeImages2.map((image, index) => (
+              <div key={index}>
+                <img src={image.src} alt={image.alt} className="carousel-image" />
+              </div>
+            ))}
+          </Slider>
+        </div>
+
+        {/* Sección de video */}
+        <div className="media-container">
+          <h3 className="video-title">Video Recopilatorio de la Actividad.</h3>
+          <div className="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/RVmqjFfRQ-Y"
+              title="Video Recopilatorio"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
+        <div className="activity-container">
         <h2 className="activity-title">Tarde Familiar N° 4: Un Encuentro de Comunidad y Solidaridad</h2>
         <p className="activity-description">
           La pasada actividad, nuestra escuela celebró con gran éxito la <strong>Tarde Familiar N° 4</strong>,
@@ -70,19 +135,22 @@ const settings = {
           </Slider>
         </div>
 
-{/* Sección de video */}
-<div className="media-container">
-  <h3 className="video-title">Video Recopilatorio de la Actividad.</h3>
-  <div className="video-container">
-    <iframe
-      src="https://www.youtube.com/embed/vZv9-TWdBJM"
-      title="Video Recopilatorio"
-      frameBorder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    ></iframe>
-  </div>
-</div>
+        {/* Sección de video */}
+        <div className="media-container">
+          <h3 className="video-title">Video Recopilatorio de la Actividad.</h3>
+          <div className="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/vZv9-TWdBJM"
+              title="Video Recopilatorio"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+
+
+      </div>
 
 
       </div>
