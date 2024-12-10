@@ -1,6 +1,7 @@
 // src/components/Footer/Footer.jsx
 import React from 'react';
 import './Footer.css';
+import { useForm, ValidationError } from '@formspree/react';
 
 const Footer = () => {
   return (
@@ -20,14 +21,15 @@ const Footer = () => {
           <p>Email: contacto@escuelagasparcabrales.cl</p>
         </div>
         <div className="footer-section">
-          <h3>Formulario de Contacto</h3>
-          <form className="contact-form">
-            <input type="text" placeholder="Tu nombre" required />
-            <input type="email" placeholder="Tu correo electrónico" required />
-            <textarea placeholder="Tu mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-          </form>
-        </div>
+  <h3>Formulario de Contacto</h3>
+  <form className="contact-form" action="https://formspree.io/f/xwpkjnrl" method="POST">
+    <input type="text" name="name" placeholder="Tu nombre" required />
+    <input type="email" name="email" placeholder="Tu correo electrónico" required />
+    <textarea name="message" placeholder="Tu mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
         <div className="footer-section">
           <h3>Ubicación</h3>
           <div className="map">
