@@ -106,7 +106,7 @@ const settings = {
           </div>
         </div>
 
-        <div className="activity-container">
+        <div >
         <h2 className="activity-title">Tarde Familiar N° 4: Un Encuentro de Comunidad y Solidaridad</h2>
         <p className="activity-description">
           La pasada actividad, nuestra escuela celebró con gran éxito la <strong>Tarde Familiar N° 4</strong>,
@@ -140,7 +140,7 @@ const settings = {
           <h3 className="video-title">Video Recopilatorio de la Actividad.</h3>
           <div className="video-container">
             <iframe
-              src="https://www.youtube.com/embed/vZv9-TWdBJM"
+              src="https://www.youtube.com/embed/9z5r-RNYsIY"
               title="Video Recopilatorio"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
