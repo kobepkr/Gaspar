@@ -1,0 +1,103 @@
+/* Contenedor principal */
+.gestion-directivo-container {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f8f8f8; /* Fondo suave para el contraste */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', serif; /* Tipografía elegante y sobria */
+}
+
+/* Título principal */
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Introducción del contenido */
+.introduccion p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Contenedor de los miembros del equipo */
+.equipo-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Sección de cada miembro */
+.equipo-section {
+  margin-bottom: 10px;
+}
+
+/* Título de cada sección */
+.section-title {
+  font-size: 2rem;
+  color: #2a2a2a;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: 5px;
+}
+
+/* Cada miembro del equipo */
+.equipo-item {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto de hover en cada miembro */
+.equipo-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Títulos de los miembros */
+.equipo-title {
+  font-size: 1.8rem;
+  color: #2a2a2a;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: 5px;
+}
+
+/* Descripción de los miembros */
+.equipo-description {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Estilo responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .title {
+      font-size: 2rem;
+  }
+
+  .section-title {
+      font-size: 1.6rem;
+  }
+
+  .equipo-title {
+      font-size: 1.5rem;
+  }
+
+  .equipo-description {
+      font-size: 1rem;
+  }
+}

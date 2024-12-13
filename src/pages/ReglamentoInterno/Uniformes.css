@@ -1,0 +1,39 @@
+.protocolo-container {
+    padding: 20px;
+  }
+  
+  .subtitulo-articulo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .subtitulo {
+    font-size: 18px;
+    font-weight: normal;
+    color: #666;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .lista-detalles {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .lista-detalles li {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  .introduccion {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 20px;
+  }
+  

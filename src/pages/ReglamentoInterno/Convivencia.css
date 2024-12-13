@@ -1,0 +1,138 @@
+/* Contenedor principal */
+.gestion-convivencia-container {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #f8f8f8; /* Fondo suave */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Georgia', serif;
+}
+
+/* Título principal */
+.title {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #333;
+  margin-bottom: 40px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Introducción */
+.introduccion p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Sección de cada parte */
+.seccion {
+  margin-bottom: 40px;
+}
+
+/* Título de las secciones */
+.section-title, .subsection-title {
+  font-size: 2rem;
+  color: #2a2a2a;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #e1e1e1;
+  padding-bottom: 5px;
+}
+
+/* Artículos dentro de las secciones */
+.subsection-articulo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #2a2a2a;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Detalles del establecimiento */
+.lista-detalles {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.lista-detalles li {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+/* Enlace de descarga */
+.download-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-button {
+  display: inline-block;
+  background-color: #2a19c5;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.download-button:hover {
+  background-color: #263cb9;
+}
+/* Estilo del cuadro de caracterización */
+.cuadro-caracterizacion {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Título de la sección */
+.subsection-title {
+  font-size: 1.8rem;
+  color: #0066cc; /* Color azul para el título */
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 3px solid #0066cc;
+  padding-bottom: 10px;
+}
+
+/* Estilo para la tabla */
+.tabla-caracterizacion {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Estilo de las celdas y encabezados */
+.tabla-caracterizacion th, .tabla-caracterizacion td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+/* Fondo azul para los encabezados */
+.tabla-caracterizacion th {
+  background-color: #0066cc;
+  color: white;
+}
+
+/* Estilo para las filas impares */
+.tabla-caracterizacion tr:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+/* Resaltar fila al pasar el ratón */
+.tabla-caracterizacion tr:hover {
+  background-color: #f1f1f1;
+}

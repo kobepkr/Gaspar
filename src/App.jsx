@@ -15,7 +15,7 @@ import AsistenteEducacion from './pages/Comunidad/AsistenteEducacion';
 import Docente from './pages/Comunidad/Docente';
 import GestionDirectivo from './pages/Comunidad/GestionDirectivo';
 import PlanConvivencia from './pages/ConvivenciaEscolar/PlanConvivencia';
-import Convivencia from './pages/ReglamentoInterno/Convicencia';
+import Convivencia from './pages/ReglamentoInterno/Convivencia';
 import Horarios from './pages/ReglamentoInterno/Horarios';
 import Manual from './pages/ReglamentoInterno/Manual';
 import Protocolos from './pages/ReglamentoInterno/Protocolos';

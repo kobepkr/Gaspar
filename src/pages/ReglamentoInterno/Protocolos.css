@@ -1,0 +1,87 @@
+/* Contenedor principal */
+.protocolo-container {
+    margin: 0 auto; /* Centrado horizontal */
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Fuente uniforme para todo el contenido */
+    color: #333; /* Color de texto principal */
+    text-align: justify; /* Alineación justificada */
+    background-color: #f8f8f8; /* Fondo suave para contraste */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Título principal */
+  .titulo-principal {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #005fa3;
+    text-align: center; /* Centrado */
+    padding-top: 40px; /* Espaciado superior */
+  }
+  
+  /* Título de los artículos */
+  .articulo-titulo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Centrado */
+  }
+  
+  /* Introducción */
+  .introduccion {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  /* Subtítulos principales */
+  .subtitulo {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center; /* Centrado */
+  }
+  
+  /* Lista de detalles */
+  .lista-detalles {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  /* Tabla de procedimiento */
+  .tabla-procedimiento {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .tabla-procedimiento th,
+  .tabla-procedimiento td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .tabla-procedimiento th {
+    background-color: #f4f4f4;
+  }
+  
+  .tabla-procedimiento tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .tabla-procedimiento tr:hover {
+    background-color: #eaeaea;
+  }
+  
+  /* Subtítulo para artículos adicionales */
+  .subtitulo-articulo {
+    font-size: 1.5rem; /* Tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: #333; /* Color del texto */
+    padding-top: 40px; /* Espaciado superior */
+    margin-bottom: 20px; /* Espacio debajo */
+    text-align: center; /* Centrado */
+  }
+  
