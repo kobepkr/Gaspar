@@ -3,6 +3,8 @@ import React from 'react';
 function Uniformes() {
   return (
     <div className="protocolo-container">
+       <h1 className="titulo-principal">Uniforme de Escuela Gaspar Cabrales</h1>
+
       <div className="subtitulo-articulo">
         Artículo 11. Presentación personal y uso del uniforme escolar
       </div>

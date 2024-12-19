@@ -4,10 +4,7 @@ import './Horarios.css'; // Asegúrate de crear este archivo CSS para los estilo
 function Horarios() {
   return (
     <div className="horarios-container">
-      <div className="titulo-horarios">
-        Jornada Diurna - Horarios
-      </div>
-      
+       <h1 className="titulo-principal">Jornada de Escuela Gaspar Cabrales</h1>      
       <div className="introduccion">
         <p>En nuestra institución, entendemos la importancia de organizar el tiempo para que nuestros estudiantes puedan equilibrar su desarrollo académico y personal. A continuación, te presentamos los horarios de entrada y salida de los diferentes niveles educativos, pensados para optimizar el aprendizaje y bienestar de nuestros estudiantes.</p>
       </div>
